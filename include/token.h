@@ -14,4 +14,7 @@ typedef struct token_t
     bool isInit;
 } Token;
 
+Token newToken(TokenKind kind, char *value, Span span);
+void freeToken(Token *token);
+
 #endif

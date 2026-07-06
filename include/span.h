@@ -3,6 +3,7 @@
 
 #include <stdint.h>
 
+// Span is [start, end)
 typedef struct span_t
 {
     uint64_t start;
