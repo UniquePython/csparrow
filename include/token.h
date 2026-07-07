@@ -24,17 +24,11 @@ HASHMAP_DEFINE(char *, TokenKind, LATM)
 HASHMAP_DEFINE(char *, TokenKind, KTTKM)
 HASHMAP_DEFINE(TokenKind, char *, TDM)
 
-uint64_t hashCStr(char **key);
-bool eqCStr(char **a, char **b);
+extern SCTM *singleCharTokensMap;
+extern LATM *lookAheadTokensMap;
+extern KTTKM *keywordsToTokenKindMap;
+extern TDM *tokenDisplayMap;
 
-SCTM *singleCharTokensMap;
-LATM *lookAheadTokensMap;
-KTTKM *keywordsToTokenKindMap;
-TDM *tokenDisplayMap;
-
-void populateSCTM(void);
-void populateLATM(void);
-void populateKTTKM(void);
-void populateTDM(void);
+void initTokenTables(void);
 
 #endif
