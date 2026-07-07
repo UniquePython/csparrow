@@ -10,12 +10,9 @@
 
 Token newToken(TokenKind kind, char *value, Span span)
 {
-    uint64_t spanSub;
-    SPARROW_CHECKED_SUB(span.end, span.start, &spanSub);
-
     return (Token){
         .kind = kind,
-        .value = SparrowStrClone(value, spanSub),
+        .value = value,
         .span = span,
     };
 }

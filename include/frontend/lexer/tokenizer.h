@@ -5,14 +5,10 @@
 
 #include "tools/dynarray.h"
 
-#include <stdbool.h>
 #include <stddef.h>
 
 DYNARRAY_DEFINE(Token, TokenArray)
 
-bool IsIdentifierStart(char c);
-bool IsIdentifier(char c);
-
-TokenArray tokenize(char *src, size_t srcLen);
+TokenArray *tokenize(const char *src, size_t srcLen);
 
 #endif
