@@ -30,5 +30,6 @@ extern KTTKM *keywordsToTokenKindMap;
 extern TDM *tokenDisplayMap;
 
 void initTokenTables(void);
+void freeTokenTables(void);
 
 #endif

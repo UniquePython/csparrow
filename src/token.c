@@ -145,3 +145,16 @@ void initTokenTables(void)
     populateKTTKM();
     populateTDM();
 }
+
+void freeTokenTables(void)
+{
+    SCTM_free(singleCharTokensMap);
+    LATM_free(lookAheadTokensMap);
+    KTTKM_free(keywordsToTokenKindMap);
+    TDM_free(tokenDisplayMap);
+
+    singleCharTokensMap = NULL;
+    lookAheadTokensMap = NULL;
+    keywordsToTokenKindMap = NULL;
+    tokenDisplayMap = NULL;
+}
