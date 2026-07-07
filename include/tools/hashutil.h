@@ -1,7 +1,7 @@
 #ifndef TOOLS_HASHUTIL_H_
 #define TOOLS_HASHUTIL_H_
 
-#include "frontend/tokens/tokenkind.h"
+#include "frontend/lexer/tokens/tokenkind.h"
 
 #include <stdint.h>
 #include <stdbool.h>

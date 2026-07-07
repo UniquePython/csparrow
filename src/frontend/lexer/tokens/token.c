@@ -1,4 +1,4 @@
-#include "frontend/tokens/token.h"
+#include "frontend/lexer/tokens/token.h"
 
 #include "tools/allocator.h"
 #include "tools/strtools.h"

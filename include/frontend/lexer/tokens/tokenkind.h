@@ -1,5 +1,5 @@
-#ifndef TOKENKIND_H_
-#define TOKENKIND_H_
+#ifndef FRONTEND_LEXER_TOKENS_TOKENKIND_H_
+#define FRONTEND_LEXER_TOKENS_TOKENKIND_H_
 
 typedef enum tokenkind_t
 {

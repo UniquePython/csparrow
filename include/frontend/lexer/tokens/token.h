@@ -1,8 +1,8 @@
-#ifndef TOKEN_H_
-#define TOKEN_H_
+#ifndef FRONTEND_LEXER_TOKENS_TOKEN_H_
+#define FRONTEND_LEXER_TOKENS_TOKEN_H_
 
 #include "span.h"
-#include "frontend/tokens/tokenkind.h"
+#include "frontend/lexer/tokens/tokenkind.h"
 
 #include "tools/hashmap.h"
 
