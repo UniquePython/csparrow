@@ -15,7 +15,6 @@ Token newToken(TokenKind kind, char *value, Span span)
         .kind = kind,
         .value = SparrowStrClone(value, spanSub),
         .span = span,
-        .isInit = true,
     };
 }
 
@@ -23,5 +22,4 @@ void freeToken(Token *token)
 {
     free(token->value);
     token->value = NULL;
-    token->isInit = false;
 }

@@ -4,14 +4,11 @@
 #include "span.h"
 #include "tokenkind.h"
 
-#include <stdbool.h>
-
 typedef struct token_t
 {
     TokenKind kind;
     char *value;
     Span span;
-    bool isInit;
 } Token;
 
 Token newToken(TokenKind kind, char *value, Span span);
