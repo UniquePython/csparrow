@@ -2,7 +2,7 @@
 
 #include <string.h>
 
-static uint64_t hashCStr(char **key)
+uint64_t hashCStr(char **key)
 {
     uint64_t h = 1469598103934665603ULL; // FNV-1a
     const char *s = *key;
@@ -14,17 +14,17 @@ static uint64_t hashCStr(char **key)
     return h;
 }
 
-static bool eqCStr(char **a, char **b)
+bool eqCStr(char **a, char **b)
 {
     return strcmp(*a, *b) == 0;
 }
 
-uint64_t hashTokenKind(const void *key)
+uint64_t hashTokenKind(TokenKind *key)
 {
-    return (uint64_t)*(const TokenKind *)key;
+    return (uint64_t)(*key);
 }
 
-bool eqTokenKind(const void *lhs, const void *rhs)
+bool eqTokenKind(TokenKind *a, TokenKind *b)
 {
-    return *(const TokenKind *)lhs == *(const TokenKind *)rhs;
+    return *a == *b;
 }
