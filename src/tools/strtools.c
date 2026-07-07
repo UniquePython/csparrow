@@ -1,4 +1,6 @@
 #include "tools/strtools.h"
+#include "tools/allocator.h"
+#include "tools/ckdarith.h"
 
 #include <string.h>
 
