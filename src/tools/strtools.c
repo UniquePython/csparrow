@@ -15,8 +15,11 @@ size_t SparrowStrLen(const char *s, size_t maxlen)
 char *SparrowStrClone(const char *str, size_t n)
 {
     size_t len = SparrowStrLen(str, n);
+    size_t size;
 
-    char *copy = SparrowMalloc(len + 1);
+    SPARROW_CHECKED_ADD(len, 1, &size);
+
+    char *copy = SparrowMalloc(size);
     memcpy(copy, str, len);
     copy[len] = '\0';
 
