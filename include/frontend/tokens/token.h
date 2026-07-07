@@ -2,7 +2,7 @@
 #define TOKEN_H_
 
 #include "span.h"
-#include "tokenkind.h"
+#include "frontend/tokens/tokenkind.h"
 
 #include "tools/hashmap.h"
 
